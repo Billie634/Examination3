@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Stressfria försäkringar - Kontakt</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navigering som blir en hamburgermeny på mindre skärmar -->
+        <nav class="navbar navbar-expand-lg fs-3 py-4">
+            <div class="container-fluid w-75">
+                <!-- Logga med länk till förstasidan -->
+                <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt="Stressfri försäkring"
+                        width="120" height="120"></a>
+                <!-- Hanterar navigeringen på mobila enheter (hamburgermenyn) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Denna div ser till att innehållet hamnar under hamburgermenyn på mindre skärmar -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Primär navigering -->
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="forsakring.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Försäkringar
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="hemforsakring.html">Hemförsäkring</a></li>
+                                <li><a class="dropdown-item" href="djurforsakring.html">Djurförsäkring</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="skadeanmalan.html">Skadeanmälan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="kontakt.html" aria-current="page">Kontakt</a>
+                        </li>
+                    </ul>
+                    <!-- Sökruta -->
+                    <form class="d-flex gap-4" role="search">
+                        <input class="form-control fs-4" type="search" placeholder="T.ex. hundförsäkring"
+                            aria-label="Search">
+                        <button class="btn btn-primary fs-4" type="submit">Sök</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="px-5">
+        <!-- Breadcrumbs, visar vilken sida användaren är på -->
+        <div class="container w-75 my-3">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Hem</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Kontakt</li>
+                </ol>
+            </nav>
+        </div>
+        <!-- Tre cards med kontaktinfo -->
+        <div class="container w-75 text-center my-5">
+            <h1 class="mb-4">Kontakta oss på flera sätt</h1>
+            <div class="row gap-5">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title fs-4">Chatta med våran bot</h5>
+                            <p class="card-text fs-5">Chatten är öppen 24/7 och kan ge dig svar på de flesta frågor!</p>
+                            <a href="#" class="btn btn-primary fs-4">Gå till chatten</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title fs-4">Skicka mejl</h5>
+                            <p class="card-text fs-5">Är ärendet inte brådskande men behöver personlig assistans så kan
+                                du
+                                skicka ett mejl så svarar vi så snart som möjligt.</p>
+                            <a href="#" class="btn btn-primary fs-4">Skicka mejl</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title fs-4">Ring oss på 123-456 78 91</h5>
+                            <p class="card-text fs-5">Du får snabbast hjälp om du ringer oss. Telefonväxeln är öppen
+                                09-16 på
+                                vardagar.</p>
+                            <a href="#" class="btn btn-primary fs-4">Ring</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Två containers med information -->
+        <div class="container w-75 border my-5 p-4 rounded-3">
+            <h2>Information in other languages</h2>
+            <p class="fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam distinctio asperiores aut
+                sapiente vel
+                soluta itaque quo, nulla corrupti ea, maxime reiciendis dolorum inventore, officia laboriosam
+                praesentium. Atque voluptates aut sapiente facere maxime non dolorem corrupti exercitationem laborum
+                saepe, adipisci consectetur debitis mollitia pariatur magni voluptatibus sit, vel qui! Ducimus ipsum
+                molestiae possimus distinctio ullam ab minus, rem nihil in architecto quae doloribus corporis ratione
+                aperiam. Blanditiis autem repudiandae quo ex. Beatae rem ab voluptas error perspiciatis reiciendis in
+                ipsum voluptatum officia minima, earum quam doloremque minus, accusantium fuga delectus soluta inventore
+                ut repellat est ipsa aspernatur nihil possimus libero!</p>
+        </div>
+        <div class="container w-75 border my-5 p-4 rounded-3">
+            <h2>Boka rådgivning med oss i någon utav våra kontor</h2>
+            <p class="fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam distinctio asperiores aut
+                sapiente vel
+                soluta itaque quo, nulla corrupti ea, maxime reiciendis dolorum inventore, officia laboriosam
+                praesentium. Atque voluptates aut sapiente facere maxime non dolorem corrupti exercitationem laborum
+                saepe, adipisci consectetur debitis mollitia pariatur magni voluptatibus sit, vel qui! Ducimus ipsum
+                molestiae possimus distinctio ullam ab minus, rem nihil in architecto quae doloribus corporis ratione
+                aperiam. Blanditiis autem repudiandae quo ex. Beatae rem ab voluptas error perspiciatis reiciendis in
+                ipsum voluptatum officia minima, earum quam doloremque minus, accusantium fuga delectus soluta inventore
+                ut repellat est ipsa aspernatur nihil possimus libero!</p>
+            <a href="#" class="btn btn-primary fs-4">Till bokning</a>
+        </div>
+        <!-- Container med bild och information om intyg-->
+        <div class="container w-75 my-5 rounded-3">
+            <div class="row">
+                <div class="col px-0 ">
+                    <img src="images/pyramids.webp" class="img-fluid rounded-3"
+                        alt="man tar kort på pyramider i Egypten">
+                </div>
+                <div class="col px-4">
+                    <h2 class="display-5">Ska du resa utomlands? Då kan du behöva intyg för reseförsäkring</h2>
+                    <p class="fs-4">När du reser till vissa länder så kan de kräva ett intyg att du har en
+                        reseförsäkring som gäller
+                        vid sjukdom (inklusive covid-19). Denna visar även att du har en ansvarsförsäkring. Har du en
+                        hemförsäkring hos oss så inkluderar denna även en 30 dagars reseförsäkring. Kontakta oss för att
+                        begära ett intyg om reseförsäkring.</p>
+                    <button type="button" class="btn btn-lg btn-primary fs-4">Kontakta oss här för intyg</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container d-flex flex-wrap w-75 py-5 border-top gap-5">
+            <div class="col">
+                <a href="/" class="">
+                    <img class="m-auto" src="images/logo.webp" alt="Stressfri försäkring" width="100" height="100">
+                </a>
+            </div>
+            <!-- Tomt div som ger mer utrymme på större skärmar, döljs på mindre-->
+            <div class="col d-none d-md-block">
+            </div>
+            <div class="col">
+                <h5>Tips</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hus och hem</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tips för hund</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tips för katt</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tips för hela familjen</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Våra försäkringar</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hemförsäkring</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hundförsäkring</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kattförsäkring</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Smådjursförsäkring</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Kundservice</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Vanliga frågor</a></li>
+                    <li class="nav-item mb-2"><a href="kontakt.html" class="nav-link p-0 text-muted">Kontakta oss</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="skadeanmalan.html"
+                            class="nav-link p-0 text-muted">Skadeanmälan</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Boka tid hos oss</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Stressfria försäkringar - Djurförsäkringar</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navigering som blir en hamburgermeny på mindre skärmar -->
+        <nav class="navbar navbar-expand-lg fs-3 py-4">
+            <div class="container-fluid w-75">
+                <!-- Logga med länk till förstasidan -->
+                <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt="Stressfri försäkring"
+                        width="120" height="120"></a>
+                <!-- Hanterar navigeringen på mobila enheter (hamburgermenyn) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Denna div ser till att innehållet hamnar under hamburgermenyn på mindre skärmar -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Primär navigering -->
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="forsakring.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Försäkringar
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="hemforsakring.html">Hemförsäkring</a></li>
+                                <li><a class="dropdown-item active" href="djurforsakring.html"
+                                        aria-current="page">Djurförsäkring</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="skadeanmalan.html">Skadeanmälan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                    <!-- Sökruta -->
+                    <form class="d-flex gap-4" role="search">
+                        <input class="form-control fs-4" type="search" placeholder="T.ex. hundförsäkring"
+                            aria-label="Search">
+                        <button class="btn btn-primary fs-4" type="submit">Sök</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="px-5">
+        <!-- Breadcrumbs, visar vilken sida användaren är på -->
+        <div class="container w-75 my-3">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Hem</a></li>
+                    <li class="breadcrumb-item"><a href="forsakring.html">Försäkring</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Djurförsäkring</li>
+                </ol>
+            </nav>
+        </div>
+        <!-- Hero, elementen staplas på varandra vid 992px (large) brytpunkten -->
+        <div class="container w-75 my-5">
+            <div class="row align-items-center g-5">
+                <div class="col-10 col-lg-6">
+                    <h1 class="display-5 fw-bold mb-3">Dina älskade familjemedlemmar</h1>
+                    <div class="d-grid gap-2 d-md-flex">
+                        <button type="button" class="btn btn-lg btn-outline-primary fs-4">Hundförsäkring</button>
+                        <button type="button" class="btn btn-lg btn-outline-primary fs-4">Kattförsäkring</button>
+                        <button type="button" class="btn btn-lg btn-outline-primary fs-4">Smådjursförsäkring</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/happy-frenchie.jpg" class="d-block mx-lg-auto img-fluid rounded-4"
+                        alt="närbild på en glad fransk bulldog" width="700" height="450" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <!-- Tre kolumner med info-kort -->
+        <div class="container w-75 text-center my-5">
+            <div class="row align-items-start gap-5">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Om ditt djur insjuknar eller skadas</h4>
+                            <p class="card-text fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                facilis tempora eaque neque! Voluptate error accusamus maiores odit quas assumenda.</p>
+                            <a href="skadeanmalan.html" class="btn btn-primary">Till skadeanmälan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Tandvård ingår i alla djurförsäkringar</h4>
+                            <p class="card-text fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Dignissimos
+                                perferendis qui consequatur ea voluptatibus illum itaque aperiam eligendi ducimus saepe.
+                            </p>
+                            <a href="#" class="btn btn-primary">Läs mer om allt som ingår</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Fria videosamtal med veterinär</h4>
+                            <p class="card-text fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Temporibus
+                                quisquam qui voluptas molestias perferendis provident itaque ducimus. Architecto, ad
+                                dolore?</p>
+                            <a href="#" class="btn btn-primary">Läs mer om videovet här</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Behållare med information -->
+        <div class="container-lg w-75 p-5 border border-info rounded-4" style="background-color: #DAF5FF">
+            <h2>Trygghet för alla dina husdjur</h2>
+            <p class="fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur quaerat natus, maxime
+                delectus
+                repellat eligendi deserunt fugit fugiat voluptatibus laudantium non vitae iusto praesentium voluptas
+                iure ipsam. Dolor, <a href="#">reiciendis error</a>. Molestiae quasi quibusdam numquam similique, non
+                labore. Aperiam ipsum in velit reprehenderit, tempore dignissimos ex laboriosam ullam iusto? Maxime,
+                rem.</p>
+            <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus culpa, optio atque dicta
+                officia
+                adipisci illo iusto, dolore rerum earum ad dolores quaerat dolor modi asperiores saepe nemo nobis ipsa
+                cupiditate autem eos, harum error. Magni, numquam deleniti unde distinctio officiis earum ipsum facilis
+                nemo quae adipisci, expedita dolores repellendus ipsam qui soluta! Deleniti obcaecati repudiandae dicta
+                voluptatum quas! Beatae laborum explicabo, veritatis animi deleniti blanditiis debitis qui consequatur
+                perspiciatis.</p>
+            <ul class="fs-4">
+                <li>15% rabatt vid nyförsäkring</li>
+                <li>En fast självrisk om året</li>
+                <li>Alla typer av röntgen</li>
+                <li>Mediciner</li>
+                <li>Fästingmedel</li>
+            </ul>
+            <p class="fs-4">Behöver du hjälp så kan du ringa oss på <strong>123-456 78 91</strong>.</p>
+        </div>
+        <!-- Tabeller med information om hund- och kattförsäkring -->
+        <div class="container w-75 my-5 fs-5">
+            <div class="row gap-5">
+                <div class="col border px-0 py-1 rounded-3">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Hundförsäkring</th>
+                                <th scope="col">Liten</th>
+                                <th scope="col">Mellan</th>
+                                <th scope="col">Stor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Veterinärvård</th>
+                                <td>30,000</td>
+                                <td>60,000</td>
+                                <td>100,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Livförsäkring</th>
+                                <td>Valbar</td>
+                                <td>Valbar</td>
+                                <td>Valbar</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Akupunktur</th>
+                                <td>Ja</td>
+                                <td>Ja</td>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sjukvårdsrådgivning</th>
+                                <td>Ja</td>
+                                <td>Ja</td>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">MR, CT och Scint</th>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Kejsarsnitt</th>
+                                <td>Ett</td>
+                                <td>Två</td>
+                                <td>Två</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tandvård</th>
+                                <td>Ja</td>
+                                <td>Ja</td>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Medicin</th>
+                                <td>-</td>
+                                <td>Upp till 10,000</td>
+                                <td>Upp till 15,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Strålning och cellgiftbehandling</th>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>Ja</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col border px-0 py-1 rounded-3">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Kattförsäkring</th>
+                                <th scope="col">Liten</th>
+                                <th scope="col">Mellan</th>
+                                <th scope="col">Stor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Veterinärvård</th>
+                                <td>30,000</td>
+                                <td>60,000</td>
+                                <td>100,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Livförsäkring</th>
+                                <td>Valbar</td>
+                                <td>Valbar</td>
+                                <td>Valbar</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Dolda fel</th>
+                                <td>Ja</td>
+                                <td>Ja</td>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sjukvårdsrådgivning</th>
+                                <td>Ja</td>
+                                <td>Ja</td>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">MR, CT och Scint</th>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Kejsarsnitt</th>
+                                <td>Ett</td>
+                                <td>Två</td>
+                                <td>Två</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tandvård</th>
+                                <td>Ja</td>
+                                <td>Ja</td>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Medicin</th>
+                                <td>-</td>
+                                <td>Upp till 10,000</td>
+                                <td>Upp till 15,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">TR(FORL)</th>
+                                <td>Ja</td>
+                                <td>Ja</td>
+                                <td>Ja</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container d-flex flex-wrap w-75 py-5 border-top gap-5">
+            <div class="col">
+                <a href="/" class="">
+                    <img class="m-auto" src="images/logo.webp" alt="Stressfri försäkring" width="100" height="100">
+                </a>
+            </div>
+            <!-- Tomt div som ger mer utrymme på större skärmar, döljs på mindre-->
+            <div class="col d-none d-md-block">
+            </div>
+            <div class="col">
+                <h5>Tips</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hus och hem</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tips för hund</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tips för katt</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tips för hela familjen</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Våra försäkringar</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hemförsäkring</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hundförsäkring</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kattförsäkring</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Smådjursförsäkring</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Kundservice</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Vanliga frågor</a></li>
+                    <li class="nav-item mb-2"><a href="kontakt.html" class="nav-link p-0 text-muted">Kontakta oss</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="skadeanmalan.html"
+                            class="nav-link p-0 text-muted">Skadeanmälan</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Boka tid hos oss</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

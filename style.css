@@ -1,0 +1,24 @@
+footer,
+.navbar {
+  background-color: #ffeed4;
+}
+
+.btn-primary,
+.btn-outline-primary:hover {
+  background-color: #548f86;
+  border-color: #548f86;
+}
+
+.btn-primary:hover {
+  background-color: #3c6264;
+  border-color: #3c6264;
+}
+
+.btn-outline-primary {
+  border-color: #548f86;
+  color: #548f86;
+}
+
+.breadcrumb-item a {
+  color: #548f86;
+}

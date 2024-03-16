@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Stressfria försäkringar - Hemförsäkringar</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navigering som blir en hamburgermeny på mindre skärmar -->
+        <nav class="navbar navbar-expand-lg fs-3 py-4">
+            <div class="container-fluid w-75">
+                <!-- Logga med länk till förstasidan -->
+                <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt="Stressfri försäkring"
+                        width="120" height="120"></a>
+                <!-- Hanterar navigeringen på mobila enheter (hamburgermenyn) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Denna div ser till att innehållet hamnar under hamburgermenyn på mindre skärmar -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Primär navigering -->
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="forsakring.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Försäkringar
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active" href="hemforsakring.html"
+                                        aria-current="page">Hemförsäkring</a></li>
+                                <li><a class="dropdown-item" href="djurforsakring.html">Djurförsäkring</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="skadeanmalan.html">Skadeanmälan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                    <!-- Sökruta -->
+                    <form class="d-flex gap-4" role="search">
+                        <input class="form-control fs-4" type="search" placeholder="T.ex. hundförsäkring"
+                            aria-label="Search">
+                        <button class="btn btn-primary fs-4" type="submit">Sök</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="px-5">
+        <!-- Breadcrumbs, visar vilken sida användaren är på -->
+        <div class="container w-75 my-3">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Hem</a></li>
+                    <li class="breadcrumb-item"><a href="forsakring.html">Försäkring</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Hemförsäkring</li>
+                </ol>
+            </nav>
+        </div>
+        <!-- Hero, elementen staplas på varandra vid 992px (large) brytpunkten -->
+        <div class="container w-75 my-5">
+            <div class="row align-items-center g-5">
+                <div class="col-10 col-lg-6">
+                    <h1 class="display-5 fw-bold mb-3">Vad är ditt boende?</h1>
+                    <div class="d-grid gap-2 d-md-flex">
+                        <button type="button" class="btn btn-lg btn-outline-primary fs-4">Villa</button>
+                        <button type="button" class="btn btn-lg btn-outline-primary fs-4">Bostadsrätt</button>
+                        <button type="button" class="btn btn-lg btn-outline-primary fs-4">Hyresrätt</button>
+                        <button type="button" class="btn btn-lg btn-outline-primary fs-4">Studentboende</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/woman-in-home.webp" class="d-block mx-lg-auto img-fluid rounded-4"
+                        alt="kvinna sitter på en soffa och läser en tidning" width="700" height="450" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <!-- Behållare med två kolumner och två dragspel med information för personer som äger eller hyr sin bostad -->
+        <div class="container w-75 my-5">
+            <div class="row align-items-start">
+                <div class="col">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOneOwn" aria-expanded="false"
+                                    aria-controls="collapseOneOwn">
+                                    För dig som äger din bostad
+                                </button>
+                            </h2>
+                            <div id="collapseOneOwn" class="accordion-collapse collapse">
+                                <div class="accordion-body fs-4">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, vero sunt nihil
+                                        architecto
+                                        perferendis laudantium alias, debitis, voluptate similique sed rem. Cumque
+                                        mollitia amet
+                                        voluptatibus consequuntur commodi aut, fugiat atque delectus, nostrum
+                                        perferendis quisquam
+                                        provident doloremque tempore voluptate at animi. Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Earum qui sint, voluptas soluta sequi animi! Iusto unde maxime
+                                        iste modi,
+                                        provident quasi libero non nostrum nihil, reprehenderit repellendus sapiente ad
+                                        quis aliquid
+                                        incidunt in! Non omnis porro voluptatum optio rerum?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwoOwn" aria-expanded="false"
+                                    aria-controls="collapseTwoOwn">
+                                    För dig med fritidsboende
+                                </button>
+                            </h2>
+                            <div id="collapseTwoOwn" class="accordion-collapse collapse">
+                                <div class="accordion-body fs-4">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vel recusandae
+                                        expedita
+                                        eligendi distinctio vitae! Corporis delectus, facilis nulla minus perferendis
+                                        deleniti ea
+                                        aliquam eveniet, illum ipsam autem, dignissimos odit laboriosam ipsum nisi velit
+                                        recusandae
+                                        aliquid itaque. Quasi, atque impedit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThreeOwn" aria-expanded="false"
+                                    aria-controls="collapseThreeOwn">
+                                    För dig som hyr ut din bostadsrätt
+                                </button>
+                            </h2>
+                            <div id="collapseThreeOwn" class="accordion-collapse collapse">
+                                <div class="accordion-body fs-4">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde a ex hic officiis
+                                        tempore, autem est quia sunt voluptatem optio quasi quisquam. Perferendis
+                                        architecto quidem cupiditate atque vero, nam eaque! Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Quia modi esse cumque doloribus ipsam autem iusto
+                                        assumenda laborum atque! Unde temporibus tenetur consequuntur atque totam autem
+                                        ea asperiores maiores et.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFourOwn" aria-expanded="false"
+                                    aria-controls="collapseFourOwn">
+                                    Tilläggsföräkringar till äganderätter
+                                </button>
+                            </h2>
+                            <div id="collapseFourOwn" class="accordion-collapse collapse">
+                                <div class="accordion-body fs-4">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde a ex hic officiis
+                                        tempore, autem est quia sunt voluptatem optio quasi quisquam. Perferendis
+                                        architecto quidem cupiditate atque vero, nam eaque! Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Quia modi esse cumque doloribus ipsam autem iusto
+                                        assumenda laborum atque! Unde temporibus tenetur consequuntur atque totam autem
+                                        ea asperiores maiores et.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOneRent" aria-expanded="false"
+                                    aria-controls="collapseOneRent">
+                                    För dig som hyr din bostad
+                                </button>
+                            </h2>
+                            <div id="collapseOneRent" class="accordion-collapse collapse">
+                                <div class="accordion-body fs-4">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, vero sunt nihil
+                                        architecto
+                                        perferendis laudantium alias, debitis, voluptate similique sed rem. Cumque
+                                        mollitia amet
+                                        voluptatibus consequuntur commodi aut, fugiat atque delectus, nostrum
+                                        perferendis quisquam
+                                        provident doloremque tempore voluptate at animi. Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Earum qui sint, voluptas soluta sequi animi! Iusto unde maxime
+                                        iste modi,
+                                        provident quasi libero non nostrum nihil, reprehenderit repellendus sapiente ad
+                                        quis aliquid
+                                        incidunt in! Non omnis porro voluptatum optio rerum?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwoRent" aria-expanded="false"
+                                    aria-controls="collapseTwoRent">
+                                    För dig som hyr studentbostad
+                                </button>
+                            </h2>
+                            <div id="collapseTwoRent" class="accordion-collapse collapse">
+                                <div class="accordion-body fs-4">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vel recusandae
+                                        expedita
+                                        eligendi distinctio vitae! Corporis delectus, facilis nulla minus perferendis
+                                        deleniti ea
+                                        aliquam eveniet, illum ipsam autem, dignissimos odit laboriosam ipsum nisi velit
+                                        recusandae
+                                        aliquid itaque. Quasi, atque impedit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThreeRent" aria-expanded="false"
+                                    aria-controls="collapseThreeRent">
+                                    För dig som hyr och har inneboende
+                                </button>
+                            </h2>
+                            <div id="collapseThreeRent" class="accordion-collapse collapse fs-4">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <strong>Natus
+                                            blanditiis eveniet
+                                            possimus quidem, reiciendis itaque officia.</strong> Voluptas, fuga culpa
+                                        rem amet
+                                        repellat beatae dignissimos incidunt, qui architecto asperiores mollitia.
+                                        Asperiores
+                                        laudantium officia ex ab nihil qui blanditiis omnis, saepe harum corporis
+                                        tempora mollitia
+                                        dolorum eos eveniet, temporibus voluptate reprehenderit dolorem.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero perferendis
+                                        laboriosam sed
+                                        tenetur sapiente quo corporis tempora accusamus soluta est dolorum iusto
+                                        recusandae fugiat
+                                        consectetur quis nostrum, asperiores deleniti quasi in ratione earum ducimus
+                                        cumque
+                                        suscipit. Officiis dolorem, enim est fuga magni sequi ullam eaque repellendus
+                                        reprehenderit
+                                        eos ipsum commodi?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFourRent" aria-expanded="false"
+                                    aria-controls="collapseFourRent">
+                                    Tilläggsföräkringar till hyresrätter
+                                </button>
+                            </h2>
+                            <div id="collapseFourRent" class="accordion-collapse collapse fs-4">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde a ex hic officiis
+                                        tempore, autem est quia sunt voluptatem optio quasi quisquam. Perferendis
+                                        architecto quidem cupiditate atque vero, nam eaque! Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Quia modi esse cumque doloribus ipsam autem iusto
+                                        assumenda laborum atque! Unde temporibus tenetur consequuntur atque totam autem
+                                        ea asperiores maiores et.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fyra kort med info -->
+        <div class="container text-center w-75 my-5">
+            <div class="row gap-5 align-items-start">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/legs-under-boxes.webp" class="card-img-top"
+                            alt="person som ligger under lådor med benen utstickandes">
+                        <div class="card-body fs-4">
+                            <p class="card-text">Vi finns alltid tillgängliga 24/7 när olyckan väl är framme</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/woman-in-video-call.webp" class="card-img-top"
+                            alt="kvinna framför laptop i ett videosamtal">
+                        <div class="card-body fs-4">
+                            <p class="card-text">Vissa ärenden behöver inte ett fysiskt möte, det räcker ofta med
+                                videosamtal eller telefonsamtal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/woman-dragging-suitcase.webp" class="card-img-top"
+                            alt="kvinna som drar en resväska">
+                        <div class="card-body fs-4">
+                            <p class="card-text">Vi täcker även din resa. Skulle olyckan vara framme, bagaget försvinna
+                                eller inbrott sker medan du är iväg så finns vi för dig.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/elderly-couple.webp" class="card-img-top"
+                            alt="äldre par tittar på ett dokument och ler">
+                        <div class="card-body fs-4">
+                            <p class="card-text">En hemförsäkring täcker inte bara hemmet och objekt. Det täcker även
+                                dig som person i flera situationer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container d-flex flex-wrap w-75 py-5 border-top gap-5">
+            <div class="col">
+                <a href="/" class="">
+                    <img class="m-auto" src="images/logo.webp" alt="Stressfri försäkring" width="100" height="100">
+                </a>
+            </div>
+            <!-- Tomt div som ger mer utrymme på större skärmar, döljs på mindre-->
+            <div class="col d-none d-md-block">
+            </div>
+            <div class="col">
+                <h5>Tips</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hus och hem</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tips för hund</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tips för katt</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tips för hela familjen</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Våra försäkringar</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hemförsäkring</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hundförsäkring</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kattförsäkring</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Smådjursförsäkring</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Kundservice</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Vanliga frågor</a></li>
+                    <li class="nav-item mb-2"><a href="kontakt.html" class="nav-link p-0 text-muted">Kontakta oss</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="skadeanmalan.html"
+                            class="nav-link p-0 text-muted">Skadeanmälan</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Boka tid hos oss</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

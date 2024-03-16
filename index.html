@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Stressfria försäkringar</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navigering som blir en hamburgermeny på mindre skärmar -->
+        <nav class="navbar navbar-expand-lg fs-3 py-4">
+            <div class="container-fluid w-75">
+                <!-- Logga med länk till förstasidan -->
+                <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt="Stressfri försäkring"
+                        width="120" height="120"></a>
+                <!-- Hanterar navigeringen på mobila enheter (hamburgermenyn) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Denna div ser till att innehållet hamnar under hamburgermenyn på mindre skärmar -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Primär navigering -->
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="forsakring.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Försäkringar
+                            </a>
+                            <ul class="dropdown-menu fs-4">
+                                <li><a class="dropdown-item" href="hemforsakring.html">Hemförsäkring</a></li>
+                                <li><a class="dropdown-item" href="djurforsakring.html">Djurförsäkring</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="skadeanmalan.html">Skadeanmälan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                    <!-- Sökruta -->
+                    <form class="d-flex gap-2" role="search">
+                        <input class="form-control fs-4" type="search" placeholder="T.ex. hundförsäkring"
+                            aria-label="Search">
+                        <button class="btn btn-primary fs-4" type="submit">Sök</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="px-5">
+        <!-- Breadcrumbs, visar vilken sida användaren är på -->
+        <div class="container w-75 my-3">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page"><a href="index.html">Hem</a></li>
+                </ol>
+            </nav>
+        </div>
+        <!-- Hero, elementen staplas på varandra vid 992px (large) brytpunkten -->
+        <div class="container w-75 my-5">
+            <div class="row align-items-center g-5">
+                <div class="col-10 col-lg-6">
+                    <h1 class="display-5 fw-bold mb-3">Trygghet för det som är viktigt</h1>
+                    <p class="lead fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sapiente
+                        excepturi
+                        doloribus dolorem dolore in esse, ut perferendis saepe. Et, mollitia! Natus, saepe quas repellat
+                        excepturi totam recusandae dignissimos sint consectetur consequatur nam molestias minima nobis?
+                        Laboriosam nihil totam inventore.</p>
+                    <div>
+                        <button type="button"
+                            class="btn btn-primary btn-lg px-4 mt-2 me-2 fs-4">Hemförsäkringar</button>
+                        <button type="button" class="btn btn-primary btn-lg px-4 mt-2 fs-4">Djurförsäkringar</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/girl-hugging-dog.webp" class="d-block mx-lg-auto img-fluid rounded-4"
+                        alt="flicka som kramar om en liten hund" width="700" height="450" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <!-- Behållare med tre cards -->
+        <div class="container text-center w-75 my-5">
+            <div class="row gap-5">
+                <div class="col">
+                    <div class="card m-auto">
+                        <img src="images/phone.webp" class="card-img-top" alt="person som använder en smartphone">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Hantera din försäkring via våran app</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatum
+                                sit eveniet? Dolor nostrum rem voluptatibus dolore perspiciatis aspernatur dolorem.</p>
+                            <a href="#" class="btn btn-primary">Läs mer här</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card m-auto">
+                        <img src="images/friends.webp" class="card-img-top"
+                            alt="en grupp på fyra personer ute på ett fält">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">5 av 5 rekommenderar Stressfri Försäkring</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                                praesentium debitis illo iste optio ab ea numquam dolore dignissimos eos.</p>
+                            <a href="#" class="btn btn-primary">Bli en utav dom</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card m-auto">
+                        <img src="images/cat.webp" class="card-img-top" alt="en katt med öppen mun">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Vi täcker även FORL hos katt</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+                                molestias deleniti aliquam rem at error, nulla necessitatibus veniam magni magnam!</p>
+                            <a href="#" class="btn btn-primary">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dragspel med info -->
+        <div class="accordion w-75 m-auto my-5">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#multipleInsurances" aria-expanded="false" aria-controls="multipleInsurances">
+                        Rabatt när du tecknar fler försäkringar!
+                    </button>
+                </h2>
+                <div id="multipleInsurances" class="accordion-collapse collapse">
+                    <div class="accordion-body fs-5">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, vero sunt nihil architecto
+                            perferendis laudantium alias, debitis, voluptate similique sed rem. Cumque mollitia amet
+                            voluptatibus consequuntur commodi aut, fugiat atque delectus, nostrum perferendis quisquam
+                            provident doloremque tempore voluptate at animi. Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Earum qui sint, voluptas soluta sequi animi! Iusto unde maxime iste modi,
+                            provident quasi libero non nostrum nihil, reprehenderit repellendus sapiente ad quis aliquid
+                            incidunt in! Non omnis porro voluptatum optio rerum?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe soluta sed ratione incidunt
+                            rerum, maiores architecto mollitia! Quam, quae dicta? Iure at dolor, accusantium rem vitae
+                            repudiandae explicabo blanditiis porro!</p>
+                        <button type="button" class="btn btn-primary fs-4">Teckna försäkring här</button>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold fs-4" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#GDPRInfo" aria-expanded="false" aria-controls="GDPRInfo">
+                        GDPR
+                    </button>
+                </h2>
+                <div id="GDPRInfo" class="accordion-collapse collapse">
+                    <div class="accordion-body fs-5">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vel recusandae expedita
+                            eligendi distinctio vitae! Corporis delectus, facilis nulla minus perferendis deleniti ea
+                            aliquam eveniet, illum ipsam autem, dignissimos odit laboriosam ipsum nisi velit recusandae
+                            aliquid itaque. Quasi, atque impedit.</p>
+                        <button type="button" class="btn fs-4 px-0 text-decoration-underline">Läs mer om hur vi hanterar
+                            dina personuppgifter här</button>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold fs-4" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#recentNews" aria-expanded="false" aria-controls="recentNews">
+                        Aktuellt
+                    </button>
+                </h2>
+                <div id="recentNews" class="accordion-collapse collapse">
+                    <div class="accordion-body fs-5">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <strong>Natus blanditiis eveniet
+                                possimus quidem, reiciendis itaque officia.</strong> Voluptas, fuga culpa rem amet
+                            repellat beatae dignissimos incidunt, qui architecto asperiores mollitia. Asperiores
+                            laudantium officia ex ab nihil qui blanditiis omnis, saepe harum corporis tempora mollitia
+                            dolorum eos eveniet, temporibus voluptate reprehenderit dolorem.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero perferendis laboriosam sed
+                            tenetur sapiente quo corporis tempora accusamus soluta est dolorum iusto recusandae fugiat
+                            consectetur quis nostrum, asperiores deleniti quasi in ratione earum ducimus cumque
+                            suscipit. Officiis dolorem, enim est fuga magni sequi ullam eaque repellendus reprehenderit
+                            eos ipsum commodi?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container d-flex flex-wrap w-75 py-5 border-top gap-5">
+            <div class="col">
+                <a href="/" class="">
+                    <img class="m-auto" src="images/logo.webp" alt="Stressfri försäkring" width="100" height="100">
+                </a>
+            </div>
+            <!-- Tomt div som ger mer utrymme på större skärmar, döljs på mindre-->
+            <div class="col d-none d-md-block">
+            </div>
+            <div class="col">
+                <h5>Tips</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hus och hem</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tips för hund</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tips för katt</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tips för hela familjen</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Våra försäkringar</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hemförsäkring</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hundförsäkring</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kattförsäkring</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Smådjursförsäkring</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Kundservice</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Vanliga frågor</a></li>
+                    <li class="nav-item mb-2"><a href="kontakt.html" class="nav-link p-0 text-muted">Kontakta oss</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="skadeanmalan.html"
+                            class="nav-link p-0 text-muted">Skadeanmälan</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Boka tid hos oss</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
